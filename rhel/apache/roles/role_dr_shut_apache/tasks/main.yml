@@ -1,9 +1,9 @@
 ---
-- name: latest Apache version installed
-  yum:
-    name: httpd
-    state: latest
-  notify: apache-restart
+# - name: latest Apache version installed
+#   yum:
+#     name: httpd
+#     state: latest
+#   notify: apache-restart
 
 # - name: latest firewalld version installed
 #   yum:
