@@ -23,10 +23,10 @@
 #     state: enabled
 #     immediate: yes
 
-- name: Apache enabled and running
+- name: Apache stopped
   service:
     name: httpd
-    enabled: true
+    enabled: false
     state: stopped
 #
 # - name: Ensure proper Apache configuration
