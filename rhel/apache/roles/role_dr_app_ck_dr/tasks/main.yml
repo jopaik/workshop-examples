@@ -1,0 +1,9 @@
+---
+- uri:
+    url: http://"{{ ansible_host }}"
+    return_content: yes
+  register: webpage
+
+- name: Fail if AWESOME is not in the page content
+  fail:
+  when: "'DR' not in webpage.content"
